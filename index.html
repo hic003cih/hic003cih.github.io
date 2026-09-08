@@ -55,8 +55,8 @@ p{margin:0; max-width:66ch}
 h3{margin:6px 0 -6px; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--soft)}
 
 ul.dec{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px}
-ul.dec li{display:grid; grid-template-columns:auto 1fr; gap:13px; max-width:68ch}
-ul.dec li::before{content:""; width:7px; height:7px; margin-top:9px; background:var(--run)}
+ul.dec li{position:relative; padding-left:21px; max-width:68ch}
+ul.dec li::before{content:""; position:absolute; left:0; top:.62em; width:7px; height:7px; background:var(--run)}
 ul.dec b{font-weight:600}
 
 .stats{display:flex; flex-wrap:wrap; gap:1px; background:var(--hair); border:1px solid var(--hair)}
@@ -84,14 +84,14 @@ td.y{color:var(--run); font-weight:600} td.n2{color:var(--soft)}
 
 footer{border-top:1px solid var(--rule); padding-top:19px; font-size:14px; color:var(--soft)}
 hr{border:none; border-top:1px solid var(--rule); margin:0}
-@media (max-width:560px){ ul.dec li{grid-template-columns:1fr} ul.dec li::before{display:none} }
+@media (max-width:560px){ ul.dec li{padding-left:17px} }
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <div class="sysstart sysnum">PORTFOLIO · SEPTEMBER 2026</div>
+  <div class="sysnum">PORTFOLIO · SEPTEMBER 2026</div>
   <h1>Eight Years on the Factory Floor</h1>
   <p class="who-am-i">I build the software that runs manufacturing plants. Work orders, routing, traceability, BOM, inventory, equipment. Three manufacturers and one MES vendor, in Taiwan and China, mostly C# and .NET on SQL Server and Oracle. Finishing a Master of Software Engineering at Carnegie Mellon in December 2026.</p>
   <div class="contact">
@@ -109,7 +109,7 @@ hr{border:none; border-top:1px solid var(--rule); margin:0}
   <h2>An Equipment Management System across three plants</h2>
   <p class="where">Lite-On Technology · Guangzhou · 2019–2022 · C#, ASP.NET MVC, Oracle</p></div>
 
-  <p>Machine maintenance at the Guangzhou site ran on paper. To find out which machines were down you walked the floor and read paper forms. Maintenance schedules were on paper too, so maintenance got missed and there was no early warning. Three plants, making car lights, casings and circuit boards — different product lines, different processes.</p>
+  <p>Machine maintenance at the Guangzhou site ran on paper. To find out which machines were down you walked the floor and read paper forms. Maintenance schedules were on paper too, so maintenance got missed and there was no early warning. Three plants, making car lights, casings and circuit boards. Different product lines, different processes.</p>
 
   <h3>The decisions I made</h3>
   <ul class="dec">
@@ -139,7 +139,7 @@ hr{border:none; border-top:1px solid var(--rule); margin:0}
   <h2>Manufacturing execution, from three sides of the same problem</h2>
   <p class="where">Foxsemicon · Lite-On · Dewei · Cooler Master · 2016–2025</p></div>
 
-  <p>Most of my eight years is MES. The same set of problems each time — work orders, routing, traceability, BOM, inventory, WIP, label printing and barcode scanning on the shop floor — but I have worked them from three different positions, and the difference matters.</p>
+  <p>Most of my eight years is MES. The same set of problems each time: work orders, routing, traceability, BOM, inventory, WIP, label printing and barcode scanning on the shop floor. But I have worked them from three different positions, and the difference matters.</p>
 
   <div class="scroller">
   <table>
