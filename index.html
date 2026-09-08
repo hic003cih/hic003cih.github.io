@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eight Years on the Factory Floor</title>
-<meta name="description" content="Engineering portfolio of Li-Fu Chang. MES and equipment-management systems for manufacturers in Taiwan and China, plus platform and AI work from a Carnegie Mellon capstone.">
-<meta property="og:title" content="Eight Years on the Factory Floor">
-<meta property="og:description" content="Eight years building the software that runs manufacturing plants.">
+<title>Li-Fu Chang</title>
+<meta name="description" content="Li-Fu Chang builds the software that runs manufacturing plants. MES and equipment systems in C# and .NET across four employers in Taiwan and China, plus platform work from a Carnegie Mellon capstone.">
+<meta property="og:title" content="Li-Fu Chang">
+<meta property="og:description" content="I build the software that runs manufacturing plants.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127981;</text></svg>">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
 html{color-scheme:light dark}
 body{margin:0}
@@ -17,211 +17,140 @@ img{max-width:100%}
 </style>
 <style>
 :root{
-  --ground:#F7F7F4; --paper:#FFFFFF; --ink:#191C19; --soft:#5C625C;
-  --rule:#DEDFD8; --hair:#EBECE6; --tint:#EDEFE8;
-  --run:#2C6E49; --warn:#B87503; --stop:#A33B2A;
+  --ground:#F7F7F4; --ink:#191C19; --soft:#5C625C; --rule:#DEDFD8; --hair:#EBECE6;
+  --run:#2C6E49;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ground:#141815; --paper:#1B201C; --ink:#E6EAE5; --soft:#A2AAA2;
-  --rule:#2E352F; --hair:#242A25; --tint:#232A24;
-  --run:#6FBF90; --warn:#DBA544; --stop:#D9796A;
+  --ground:#141815; --ink:#E6EAE5; --soft:#A2AAA2; --rule:#2E352F; --hair:#242A25; --run:#6FBF90;
 }}
 :root[data-theme="dark"]{
-  --ground:#141815; --paper:#1B201C; --ink:#E6EAE5; --soft:#A2AAA2;
-  --rule:#2E352F; --hair:#242A25; --tint:#232A24;
-  --run:#6FBF90; --warn:#DBA544; --stop:#D9796A;
+  --ground:#141815; --ink:#E6EAE5; --soft:#A2AAA2; --rule:#2E352F; --hair:#242A25; --run:#6FBF90;
 }
 *{box-sizing:border-box}
 body{background:var(--ground); color:var(--ink);
-  font-family:"Source Sans 3",-apple-system,Segoe UI,sans-serif; font-size:17px; line-height:1.62;
+  font-family:"Source Sans 3",-apple-system,Segoe UI,sans-serif; font-size:17.5px; line-height:1.65;
   -webkit-font-smoothing:antialiased}
-.wrap{max-width:790px; margin:0 auto; padding:52px 24px 88px; display:flex; flex-direction:column; gap:46px}
-h1,h2,h3,.kicker,.attr b{font-family:"Bricolage Grotesque","Helvetica Neue",sans-serif}
-.mono,.n,.stat b,.attr .who{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+.wrap{max-width:680px; margin:0 auto; padding:64px 24px 96px}
+h1,h2{font-family:"Bricolage Grotesque","Helvetica Neue",sans-serif}
+.mono,.contact,.meta,th{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
 
-header{display:flex; flex-direction:column; gap:14px}
-h1{margin:0; font-size:clamp(33px,5.4vw,48px); line-height:1.03; font-weight:700; letter-spacing:-.025em; text-wrap:balance}
-.who-am-i{margin:0; font-size:19px; color:var(--soft); max-width:60ch}
-.contact{display:flex; flex-wrap:wrap; gap:6px 20px; padding-top:13px; border-top:1px solid var(--rule);
-  font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--soft)}
-.contact a{color:var(--run); text-decoration:none; border-bottom:1px solid transparent}
-.contact a:hover,.contact a:focus-visible{border-bottom-color:currentColor}
+h1{margin:0 0 14px; font-size:clamp(30px,5vw,40px); font-weight:700; letter-spacing:-.025em; line-height:1.1}
+h2{margin:52px 0 6px; font-size:21px; font-weight:600; letter-spacing:-.012em; line-height:1.3}
+p{margin:0 0 15px}
+p:last-child{margin-bottom:0}
+.lede{font-size:19px; color:var(--soft); margin-bottom:22px}
+.contact{font-size:12.5px; color:var(--soft); padding-top:15px; border-top:1px solid var(--rule);
+  display:flex; flex-wrap:wrap; gap:5px 18px}
+a{color:var(--run)}
+.meta{font-size:12.5px; color:var(--soft); margin:0 0 18px; letter-spacing:.01em}
 
-.sysnum{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--run)}
-h2{margin:3px 0 0; font-size:26px; font-weight:700; letter-spacing:-.016em; line-height:1.18; text-wrap:balance}
-.where{margin:4px 0 0; font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--soft)}
-section{display:flex; flex-direction:column; gap:15px}
-p{margin:0; max-width:66ch}
-h3{margin:6px 0 -6px; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--soft)}
+.nums{display:flex; flex-wrap:wrap; gap:0 34px; margin:22px 0; padding:16px 0;
+  border-top:1px solid var(--hair); border-bottom:1px solid var(--hair)}
+.nums div{display:flex; flex-direction:column}
+.nums b{font-family:"JetBrains Mono",monospace; font-size:20px; font-weight:500; font-variant-numeric:tabular-nums}
+.nums span{font-size:13px; color:var(--soft)}
 
-ul.dec{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px}
-ul.dec li{position:relative; padding-left:21px; max-width:68ch}
-ul.dec li::before{content:""; position:absolute; left:0; top:.62em; width:7px; height:7px; background:var(--run)}
-ul.dec b{font-weight:600}
-
-.stats{display:flex; flex-wrap:wrap; gap:1px; background:var(--hair); border:1px solid var(--hair)}
-.stat{background:var(--paper); padding:13px 17px; flex:1 1 150px; display:flex; flex-direction:column; gap:3px}
-.stat b{font-size:23px; line-height:1.05; font-weight:600; color:var(--ink)}
-.stat span{font-size:13px; color:var(--soft)}
-
-.attr{background:var(--paper); border:1px solid var(--rule); border-left:3px solid var(--run);
-  padding:14px 17px; display:flex; flex-direction:column; gap:7px; font-size:14.5px; max-width:68ch}
-.attr.mixed{border-left-color:var(--warn)}
-.attr .who{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--soft)}
-.attr p{font-size:14.5px}
-.attr .not{color:var(--soft)}
-
-.scroller{overflow-x:auto}
-table{border-collapse:collapse; width:100%; font-size:15px; min-width:430px}
-th,td{text-align:left; padding:9px 16px 9px 0; border-bottom:1px solid var(--hair); vertical-align:top}
-th{font-family:"Bricolage Grotesque",sans-serif; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--soft); font-weight:700; border-bottom-color:var(--rule)}
+.scroller{overflow-x:auto; margin:0 0 15px}
+table{border-collapse:collapse; width:100%; font-size:16px; min-width:400px}
+th,td{text-align:left; padding:10px 18px 10px 0; border-bottom:1px solid var(--hair); vertical-align:top}
+th{font-size:11px; letter-spacing:.11em; text-transform:uppercase; color:var(--soft); font-weight:400;
+  border-bottom-color:var(--rule)}
+td:first-child{white-space:nowrap; color:var(--run)}
 tbody tr:last-child td{border-bottom:none}
-td.y{color:var(--run); font-weight:600} td.n2{color:var(--soft)}
 
-.tags{display:flex; flex-wrap:wrap; gap:6px}
-.tag{font-family:"JetBrains Mono",monospace; font-size:11.5px; padding:3px 9px; background:var(--tint); color:var(--soft)}
+ul{margin:0 0 15px; padding-left:19px}
+li{margin-bottom:9px}
+li::marker{color:var(--run)}
 
-footer{border-top:1px solid var(--rule); padding-top:19px; font-size:14px; color:var(--soft)}
-hr{border:none; border-top:1px solid var(--rule); margin:0}
-@media (max-width:560px){ ul.dec li{padding-left:17px} }
+.aside{font-size:15.5px; color:var(--soft); border-left:2px solid var(--rule); padding-left:16px; margin:0 0 15px}
+.aside p{margin-bottom:10px}
+.aside p:last-child{margin-bottom:0}
+
+footer{margin-top:56px; padding-top:19px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--soft)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header>
-  <div class="sysnum">PORTFOLIO · SEPTEMBER 2026</div>
-  <h1>Eight Years on the Factory Floor</h1>
-  <p class="who-am-i">I build the software that runs manufacturing plants. Work orders, routing, traceability, BOM, inventory, equipment. Three manufacturers and one MES vendor, in Taiwan and China, mostly C# and .NET on SQL Server and Oracle. Finishing a Master of Software Engineering at Carnegie Mellon in December 2026.</p>
-  <div class="contact">
-    <span>Li-Fu Chang</span>
-    <span><a href="mailto:leifchang10@gmail.com">leifchang10@gmail.com</a></span>
-    <span><a href="https://www.linkedin.com/in/lifu-chang/">linkedin.com/in/lifu-chang</a></span>
-    <span>Pittsburgh, PA</span>
-  </div>
-</header>
+<h1>Li-Fu Chang</h1>
 
-<hr>
+<p class="lede">I build the software that runs manufacturing plants. Work orders, routing, traceability, BOM, inventory, equipment. Mostly C# and .NET on SQL Server and Oracle, at three manufacturers and one MES vendor in Taiwan and China. I finish a Master of Software Engineering at Carnegie Mellon in December 2026.</p>
 
-<section>
-  <div><div class="sysnum">SYSTEM 01</div>
-  <h2>An Equipment Management System across three plants</h2>
-  <p class="where">Lite-On Technology · Guangzhou · 2019–2022 · C#, ASP.NET MVC, Oracle</p></div>
+<div class="contact">
+  <span><a href="mailto:leifchang10@gmail.com">leifchang10@gmail.com</a></span>
+  <span><a href="https://www.linkedin.com/in/lifu-chang/">linkedin.com/in/lifu-chang</a></span>
+  <span>Pittsburgh, PA</span>
+</div>
 
-  <p>Machine maintenance at the Guangzhou site ran on paper. To find out which machines were down you walked the floor and read paper forms. Maintenance schedules were on paper too, so maintenance got missed and there was no early warning. Three plants, making car lights, casings and circuit boards. Different product lines, different processes.</p>
+<h2>An equipment management system, three plants</h2>
+<p class="meta">Lite-On Technology · Guangzhou · 2019–2022 · C#, ASP.NET MVC, Oracle</p>
 
-  <h3>The decisions I made</h3>
-  <ul class="dec">
-    <li><b>One system for all three plants, not three systems.</b> A single Oracle database with a plant dimension separating the product lines. We were a small team: one codebase means one set of fixes rather than three, and one database means the lines are comparable and share the same reports.</li>
-    <li><b>Hybrid data collection.</b> We read machine signals directly wherever the equipment supported it, and used manual reporting for the rest. Waiting for every machine to become instrumented would have meant shipping nothing.</li>
-    <li><b>Pilot one plant, then roll out.</b> The processes genuinely differed, so we adjusted per plant and trained the floor staff on the new workflow rather than assuming they would adopt it.</li>
-    <li><b>Integrated the system with SAP.</b> The EMS pulled ERP data and combined it with machine-status data collected from the equipment.</li>
-  </ul>
+<p>At Lite-On, machine maintenance ran on paper. You had to walk the floor and read paper forms to know which machines were down. Maintenance schedules were on paper too. So maintenance got missed, and there was no early warning.</p>
 
-  <div class="stats">
-    <div class="stat"><b>−30%</b><span>machine downtime</span></div>
-    <div class="stat"><b>5M TWD</b><span>saved per year</span></div>
-    <div class="stat"><b>3</b><span>plants, one codebase</span></div>
-    <div class="stat"><b>5</b><span>engineers I led</span></div>
-  </div>
+<p>The three plants made different products. Car lights, casings, and circuit boards. Different product lines, different processes.</p>
 
-  <div class="attr">
-    <span class="who">Attribution</span>
-    <p>My design and my build. I also led the five-engineer team and ran the knowledge-sharing programme that came with it.</p>
-  </div>
-</section>
+<p>I architected an Equipment Management System in C# and ASP.NET MVC. Two key design decisions.</p>
 
-<hr>
+<p>One shared system for all three plants, on a single Oracle database, with a plant dimension separating the product lines. Why one system? We were a small team. One codebase means one set of fixes, not three. And one database means we could compare the lines and share the same reports.</p>
 
-<section>
-  <div><div class="sysnum">SYSTEM 02</div>
-  <h2>Manufacturing execution, from three sides of the same problem</h2>
-  <p class="where">Foxsemicon · Lite-On · Dewei · Cooler Master · 2016–2025</p></div>
+<p>Second, hybrid data collection. We connected machine signals directly where the equipment supported it. We used manual reporting for the rest. The system also pulled ERP data from SAP and combined it with the machine-status data.</p>
 
-  <p>Most of my eight years is MES. The same set of problems each time: work orders, routing, traceability, BOM, inventory, WIP, label printing and barcode scanning on the shop floor. But I have worked them from three different positions, and the difference matters.</p>
+<p>We piloted at one plant first, then rolled out to the other two. We adjusted per plant, because the processes differed. And we trained the floor staff on the new workflow.</p>
 
-  <div class="scroller">
-  <table>
-    <thead><tr><th>Position</th><th>What that meant</th></tr></thead>
-    <tbody>
-      <tr><td class="y">Owner</td><td>At Lite-On we owned the source code of the MES platform and maintained and extended it ourselves, for years, in that codebase.</td></tr>
-      <tr><td class="y">Vendor side</td><td>At Dewei I customised the same class of platform for manufacturing clients as an MES software and services provider. Production line efficiency up 20%.</td></tr>
-      <tr><td class="y">Deployer</td><td>At Cooler Master I adapted an existing codebase and stood MES up in newly established factories. Product yield up 10%.</td></tr>
-    </tbody>
-  </table>
-  </div>
+<div class="nums">
+  <div><b>−30%</b><span>machine downtime</span></div>
+  <div><b>5M TWD</b><span>saved a year</span></div>
+  <div><b>5</b><span>engineers on the team I led</span></div>
+</div>
 
-  <h3>The rollout is the part people underestimate</h3>
-  <p>New MES in a new factory fails on adoption, not on code. At Cooler Master I ran it with a key user in each department, targeted training, on-site go-live support and quick-reference guides. 95% adoption in the first month.</p>
+<h2>Eight years of MES, from three sides</h2>
+<p class="meta">Foxsemicon · Lite-On · Dewei · Cooler Master · 2016–2025</p>
 
-  <div class="tags">
-    <span class="tag">work orders</span><span class="tag">routing</span><span class="tag">traceability</span>
-    <span class="tag">BOM</span><span class="tag">inventory</span><span class="tag">WIP</span>
-    <span class="tag">label printing</span><span class="tag">barcode scanning</span>
-    <span class="tag">C# / ASP.NET MVC</span><span class="tag">SQL Server</span><span class="tag">Oracle</span>
-  </div>
+<p>Most of my eight years is manufacturing execution. Same problems each time. But I have worked them from three positions, and the difference matters more than the tech stack does.</p>
 
-  <div class="attr">
-    <span class="who">How I worked in these systems</span>
-    <p>I wrote application code in these systems. I was not a configuration consultant for a packaged product. Configuration was the vendor's world. Ours was code: we owned the source and extended it ourselves for years, which is the ability an internally developed MES team is hiring for.</p>
-  </div>
-</section>
+<div class="scroller">
+<table>
+  <thead><tr><th>Position</th><th>What it meant</th></tr></thead>
+  <tbody>
+    <tr><td>Owner</td><td>At Lite-On we owned the source code of the MES platform. I wrote C# in that codebase for years.</td></tr>
+    <tr><td>Vendor side</td><td>At Dewei I customised the same class of platform for manufacturing clients. Line efficiency up 20%.</td></tr>
+    <tr><td>Deployer</td><td>At Cooler Master I adapted an existing codebase and stood MES up in new factories. Yield up 10%.</td></tr>
+  </tbody>
+</table>
+</div>
 
-<hr>
+<p>New MES in a new factory fails on adoption, not on code. At Cooler Master I ran the rollout with a key user in each department, targeted training, on-site support at go-live, and quick-reference guides. 95% adoption in the first month.</p>
 
-<section>
-  <div><div class="sysnum">SYSTEM 03</div>
-  <h2>Delivery platform for a compliance engine</h2>
-  <p class="where">Carnegie Mellon capstone with IRALOGIX · 2026 · five-person team · AWS EKS, Helm, ArgoCD</p></div>
+<h2>This year: delivery platform for a compliance engine</h2>
+<p class="meta">Carnegie Mellon capstone with IRALOGIX · 2026 · five-person team · AWS EKS, Helm, ArgoCD</p>
 
-  <p>A regulatory-compliance platform for retirement-account management. I took the delivery and platform side. The team was five people, so what follows is split into what I did and what I did not.</p>
+<p>A regulatory-compliance platform for retirement accounts. I took the delivery and platform side. Mine, end to end:</p>
 
-  <h3>Mine, end to end</h3>
-  <ul class="dec">
-    <li><b>Packaged the API service as a Helm chart</b> and delivered it to AWS EKS through an ArgoCD Application, GitOps style.</li>
-    <li><b>Built the self-hosted GitHub Actions runner fleet</b> on EKS with rootless BuildKit, so images build without privileged containers, backed by an ECR registry cache. I proved the GitOps loop rather than assuming it: scaled replicas to watch auto-sync, then added and removed a temporary ConfigMap to watch prune.</li>
-    <li><b>Implemented Ed25519-signed JWT verification</b> for internal service-to-service calls. It routes by issuer and fails closed with no fallback path. Covered by a 12-test pytest suite.</li>
-    <li><b>Designed and implemented the observability architecture</b>: the application emits OpenTelemetry only and a Collector selects the backend at deploy time; the backend changed three times in three weeks and the application did not.</li>
-    <li><b>CIDR-restricted ALB ingress</b> and the cutover from mock auth.</li>
-  </ul>
+<ul>
+  <li>Packaged the API service as a Helm chart and delivered it to EKS through an ArgoCD Application.</li>
+  <li>Built the self-hosted GitHub Actions runner fleet with rootless BuildKit, so images build without privileged containers. I proved the GitOps loop rather than assuming it: scaled replicas to watch auto-sync, added and removed a ConfigMap to watch prune.</li>
+  <li>Implemented Ed25519-signed JWT verification for internal service calls. Routes by issuer, fails closed with no fallback path, 12 pytest tests.</li>
+  <li>Designed and implemented the observability architecture: the application emits OpenTelemetry only and a Collector selects the backend at deploy time; the backend changed three times in three weeks and the application did not.</li>
+  <li>CIDR-restricted ALB ingress, and the cutover off mock auth.</li>
+</ul>
 
-  <div class="attr mixed">
-    <span class="who">Not mine, and stated because a portfolio that only lists wins is not worth reading</span>
-    <p class="not">The ArgoCD PreSync hook that applies schema migrations, the IRSA service-account trust setup, and the ArgoCD bootstrap on EKS were teammates' work. The compliance verdict engine, the admin CRUD and the OpenAPI schema were too.</p>
-    <p class="not">The EKS cluster itself, External Secrets Operator and the AWS Secrets Manager entry already existed. I installed onto that platform; I did not provision it.</p>
-  </div>
-</section>
+<div class="aside">
+  <p>Not mine, since it was a team: the ArgoCD PreSync hook for schema migrations, the IRSA trust setup, and the ArgoCD bootstrap were teammates' work, as were the verdict engine, the admin CRUD and the OpenAPI schema. The EKS cluster and External Secrets Operator already existed. I installed onto that platform, I did not provision it.</p>
+</div>
 
-<hr>
+<h2>Two internal tools from the same project</h2>
 
-<section>
-  <div><div class="sysnum">SYSTEM 04</div>
-  <h2>Two internal tools, and an honest note about what the AI does</h2>
-  <p class="where">Same capstone · Claude agent skills, Python</p></div>
+<p>A source validator for regulatory rule models. For a given US state it maps every field of the rule-model schema to a confirmed official source URL, plus instructions for finding it on that page. Most of the design is about what it refuses to do: an explicit source-priority chain, unconfirmed fields emitting null and being flagged rather than guessed, and a human review gate before anything counts as final.</p>
 
-  <h3>A source validator for regulatory rule models</h3>
-  <p>For a given US state, it maps every field of the rule-model schema to a confirmed official source URL plus instructions for finding it on that page. The design is mostly about what it refuses to do: an explicit source-priority chain, unconfirmed fields emitting null and being flagged rather than guessed, and a human review gate before anything is treated as final. The authoritative schema is pulled from Confluence over MCP as the baseline.</p>
+<p>A meeting pipeline, Zoom through Drive to Confluence, packaged as agent skills over a Python package. A sync mode diffs local folders against Confluence by date prefix and publishes only what is missing. 1,866 lines. It manages the 102 pages carrying its labels, and I wrote 89 of them.</p>
 
-  <h3>A meeting pipeline, Zoom to Confluence</h3>
-  <p>Takes a recording from Zoom through Drive to a correctly parented and labelled Confluence page, packaged as agent skills over a Python package. A sync mode diffs local folders against Confluence by date prefix and publishes only what is missing.</p>
-
-  <div class="stats">
-    <div class="stat"><b>1,866</b><span>lines of Python and shell</span></div>
-    <div class="stat"><b>102</b><span>pages under its labels</span></div>
-    <div class="stat"><b>89</b><span>of those authored by me</span></div>
-  </div>
-
-  <div class="attr mixed">
-    <span class="who">The honest note</span>
-    <p class="not">The meeting pipeline contains no model call. It is deterministic automation authored as agent skills. The skills are the interface, not the intelligence, and the summary comes from Zoom. The team's wider AI tooling, including its context hub and most of its agent skills, was built by teammates, not by me.</p>
-  </div>
-</section>
-
-<hr>
+<div class="aside">
+  <p>The pipeline contains no model call. It is deterministic automation authored as agent skills. The skills are the interface, not the intelligence, and the summary comes from Zoom.</p>
+  <p>The team's wider AI tooling, including its context hub and most of its agent skills, was built by teammates.</p>
+</div>
 
 <footer>
-  <p>Production code from the four manufacturers above is proprietary and is described here rather than shown. Everything in System 03 and System 04 is backed by commit history or a written decision record I can walk through. Figures from the four employers are the ones reported internally at the time, and I can explain what produced each one.</p>
+  <p>Production code from the four employers above is proprietary, so it is described here rather than shown. The capstone work sits in the team's repositories and its written decision records, and I can walk through either. Figures from the four employers are the ones reported internally at the time, and I can explain what produced each one.</p>
 </footer>
 
 </div>
