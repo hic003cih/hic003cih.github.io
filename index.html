@@ -1,158 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Li-Fu Chang</title>
-<meta name="description" content="Li-Fu Chang builds the software that runs manufacturing plants. MES and equipment systems in C# and .NET across four employers in Taiwan and China, plus platform work from a Carnegie Mellon capstone.">
-<meta property="og:title" content="Li-Fu Chang">
-<meta property="og:description" content="I build the software that runs manufacturing plants.">
+<title>Li-Fu Chang · Software Engineer</title>
+<meta name="description" content="Software engineer. AI agents in production at Carnegie Mellon, after eight years of factory software in C# and .NET.">
+<meta property="og:title" content="Li-Fu Chang · Software Engineer">
+<meta property="og:description" content="AI agents in production at Carnegie Mellon, after eight years of factory software in C# and .NET.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127981;</text></svg>">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<meta property="og:url" content="https://hic003cih.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231534D6'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='%23FFE15A'%3ELC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
 <style>
-html{color-scheme:light dark}
-body{margin:0}
-img{max-width:100%}
-</style>
-<style>
-:root{
-  --ground:#F7F7F4; --ink:#191C19; --soft:#5C625C; --rule:#DEDFD8; --hair:#EBECE6;
-  --run:#2C6E49;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ground:#141815; --ink:#E6EAE5; --soft:#A2AAA2; --rule:#2E352F; --hair:#242A25; --run:#6FBF90;
-}}
-:root[data-theme="dark"]{
-  --ground:#141815; --ink:#E6EAE5; --soft:#A2AAA2; --rule:#2E352F; --hair:#242A25; --run:#6FBF90;
-}
 *{box-sizing:border-box}
-body{background:var(--ground); color:var(--ink);
-  font-family:"Source Sans 3",-apple-system,Segoe UI,sans-serif; font-size:17.5px; line-height:1.65;
-  -webkit-font-smoothing:antialiased}
-.wrap{max-width:680px; margin:0 auto; padding:64px 24px 96px}
-h1,h2{font-family:"Bricolage Grotesque","Helvetica Neue",sans-serif}
-.mono,.contact,.meta,th{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
-
-h1{margin:0 0 14px; font-size:clamp(30px,5vw,40px); font-weight:700; letter-spacing:-.025em; line-height:1.1}
-h2{margin:52px 0 6px; font-size:21px; font-weight:600; letter-spacing:-.012em; line-height:1.3}
-p{margin:0 0 15px}
-p:last-child{margin-bottom:0}
-.lede{font-size:19px; color:var(--soft); margin-bottom:22px}
-.contact{font-size:12.5px; color:var(--soft); padding-top:15px; border-top:1px solid var(--rule);
-  display:flex; flex-wrap:wrap; gap:5px 18px}
-a{color:var(--run)}
-.meta{font-size:12.5px; color:var(--soft); margin:0 0 18px; letter-spacing:.01em}
-
-.nums{display:flex; flex-wrap:wrap; gap:0 34px; margin:22px 0; padding:16px 0;
-  border-top:1px solid var(--hair); border-bottom:1px solid var(--hair)}
-.nums div{display:flex; flex-direction:column}
-.nums b{font-family:"JetBrains Mono",monospace; font-size:20px; font-weight:500; font-variant-numeric:tabular-nums}
-.nums span{font-size:13px; color:var(--soft)}
-
-.scroller{overflow-x:auto; margin:0 0 15px}
-table{border-collapse:collapse; width:100%; font-size:16px; min-width:400px}
-th,td{text-align:left; padding:10px 18px 10px 0; border-bottom:1px solid var(--hair); vertical-align:top}
-th{font-size:11px; letter-spacing:.11em; text-transform:uppercase; color:var(--soft); font-weight:400;
-  border-bottom-color:var(--rule)}
-td:first-child{white-space:nowrap; color:var(--run)}
-tbody tr:last-child td{border-bottom:none}
-
-ul{margin:0 0 15px; padding-left:19px}
-li{margin-bottom:9px}
-li::marker{color:var(--run)}
-
-.aside{font-size:15.5px; color:var(--soft); border-left:2px solid var(--rule); padding-left:16px; margin:0 0 15px}
-.aside p{margin-bottom:10px}
-.aside p:last-child{margin-bottom:0}
-
-footer{margin-top:56px; padding-top:19px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--soft)}
+body{margin:0;font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif}
+.layout{display:grid;grid-template-columns:340px 1fr;gap:56px;max-width:1200px;margin:0 auto;padding:56px 24px}
+aside{position:sticky;top:56px;align-self:start}
+h1{font-weight:800;font-size:76px;line-height:.88;letter-spacing:-.04em;margin:0 0 20px}
+.role{font-size:19px;font-weight:600;margin:0 0 20px}
+.facts{list-style:none;padding:0;margin:0 0 24px;font-size:15px}
+.facts li{padding:7px 0}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{padding:9px 16px;border-radius:999px;font-weight:600;text-decoration:none}
+.links a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.work{display:flex;flex-direction:column;gap:24px}
+.tag{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+h2{font-size:27px;font-weight:800;line-height:1.2;margin:6px 0 10px;text-wrap:balance}
+p{margin:0 0 10px;max-width:64ch}
+.nums{display:flex;flex-wrap:wrap;gap:12px 40px;margin:18px 0 4px}
+.nums b{display:block;font-size:34px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
+.nums span{font-size:14px}
+@media (max-width:860px){.layout{grid-template-columns:1fr;gap:32px;padding:40px 16px}aside{position:static}h1{font-size:60px}}
+body{background:#F3F5FF;color:#0D1240}
+.layout{max-width:none;padding:0;gap:0;min-height:100vh}
+aside{background:#1534D6;color:#FFFFFF;padding:56px 32px;top:0;height:100vh}
+.facts li{border-bottom:1px solid #4A63E6;color:#C9D2FF}
+.links a{background:#FFE15A;color:#0D1240}
+.work{padding:56px 40px;max-width:900px}
+article{background:#FFFFFF;border:2px solid #0D1240;border-radius:14px;padding:28px}
+.tag,.nums span{color:#4A5280}
+.nums b{color:#1534D6}
+@media (max-width:860px){aside{height:auto;padding:40px 16px}.work{padding:24px 16px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-<h1>Li-Fu Chang</h1>
-
-<p class="lede">I build the software that runs manufacturing plants. Work orders, routing, traceability, BOM, inventory, equipment. Mostly C# and .NET on SQL Server and Oracle, at three manufacturers and one MES vendor in Taiwan and China. I finish a Master of Software Engineering at Carnegie Mellon in December 2026.</p>
-
-<div class="contact">
-  <span><a href="mailto:leifchang10@gmail.com">leifchang10@gmail.com</a></span>
-  <span><a href="https://www.linkedin.com/in/lifu-chang/">linkedin.com/in/lifu-chang</a></span>
-  <span>Pittsburgh, PA</span>
-</div>
-
-<h2>An equipment management system, three plants</h2>
-<p class="meta">Lite-On Technology · Guangzhou · 2019–2022 · C#, ASP.NET MVC, Oracle</p>
-
-<p>At Lite-On, machine maintenance ran on paper. You had to walk the floor and read paper forms to know which machines were down. Maintenance schedules were on paper too. So maintenance got missed, and there was no early warning.</p>
-
-<p>The three plants made different products. Car lights, casings, and circuit boards. Different product lines, different processes.</p>
-
-<p>I architected an Equipment Management System in C# and ASP.NET MVC. Two key design decisions.</p>
-
-<p>One shared system for all three plants, on a single Oracle database, with a plant dimension separating the product lines. Why one system? We were a small team. One codebase means one set of fixes, not three. And one database means we could compare the lines and share the same reports.</p>
-
-<p>Second, hybrid data collection. We connected machine signals directly where the equipment supported it. We used manual reporting for the rest. The system also pulled ERP data from SAP and combined it with the machine-status data.</p>
-
-<p>We piloted at one plant first, then rolled out to the other two. We adjusted per plant, because the processes differed. And we trained the floor staff on the new workflow.</p>
-
-<div class="nums">
-  <div><b>−30%</b><span>machine downtime</span></div>
-  <div><b>5M TWD</b><span>saved a year</span></div>
-  <div><b>5</b><span>engineers on the team I led</span></div>
-</div>
-
-<h2>Eight years of MES, from three sides</h2>
-<p class="meta">Foxsemicon · Lite-On · Dewei · Cooler Master · 2016–2025</p>
-
-<p>Most of my eight years is manufacturing execution. Same problems each time. But I have worked them from three positions, and the difference matters more than the tech stack does.</p>
-
-<div class="scroller">
-<table>
-  <thead><tr><th>Position</th><th>What it meant</th></tr></thead>
-  <tbody>
-    <tr><td>Owner</td><td>At Lite-On we owned the source code of the MES platform. I wrote C# in that codebase for years.</td></tr>
-    <tr><td>Vendor side</td><td>At Dewei I customised the same class of platform for manufacturing clients. Line efficiency up 20%.</td></tr>
-    <tr><td>Deployer</td><td>At Cooler Master I adapted an existing codebase and stood MES up in new factories. Yield up 10%.</td></tr>
-  </tbody>
-</table>
-</div>
-
-<p>New MES in a new factory fails on adoption, not on code. At Cooler Master I ran the rollout with a key user in each department, targeted training, on-site support at go-live, and quick-reference guides. 95% adoption in the first month.</p>
-
-<h2>This year: delivery platform for a compliance engine</h2>
-<p class="meta">Carnegie Mellon capstone with IRALOGIX · 2026 · five-person team · AWS EKS, Helm, ArgoCD</p>
-
-<p>A regulatory-compliance platform for retirement accounts. I took the delivery and platform side. Mine, end to end:</p>
-
-<ul>
-  <li>Packaged the API service as a Helm chart and delivered it to EKS through an ArgoCD Application.</li>
-  <li>Built the self-hosted GitHub Actions runner fleet with rootless BuildKit, so images build without privileged containers. I proved the GitOps loop rather than assuming it: scaled replicas to watch auto-sync, added and removed a ConfigMap to watch prune.</li>
-  <li>Implemented Ed25519-signed JWT verification for internal service calls. Routes by issuer, fails closed with no fallback path, 12 pytest tests.</li>
-  <li>Designed and implemented the observability architecture: the application emits OpenTelemetry only and a Collector selects the backend at deploy time; the backend changed three times in three weeks and the application did not.</li>
-  <li>CIDR-restricted ALB ingress, and the cutover off mock auth.</li>
-</ul>
-
-<div class="aside">
-  <p>Not mine, since it was a team: the ArgoCD PreSync hook for schema migrations, the IRSA trust setup, and the ArgoCD bootstrap were teammates' work, as were the verdict engine, the admin CRUD and the OpenAPI schema. The EKS cluster and External Secrets Operator already existed. I installed onto that platform, I did not provision it.</p>
-</div>
-
-<h2>Two internal tools from the same project</h2>
-
-<p>A source validator for regulatory rule models. For a given US state it maps every field of the rule-model schema to a confirmed official source URL, plus instructions for finding it on that page. Most of the design is about what it refuses to do: an explicit source-priority chain, unconfirmed fields emitting null and being flagged rather than guessed, and a human review gate before anything counts as final.</p>
-
-<p>A meeting pipeline, Zoom through Drive to Confluence, packaged as agent skills over a Python package. A sync mode diffs local folders against Confluence by date prefix and publishes only what is missing. 1,866 lines. It manages the 102 pages carrying its labels, and I wrote 89 of them.</p>
-
-<div class="aside">
-  <p>The pipeline contains no model call. It is deterministic automation authored as agent skills. The skills are the interface, not the intelligence, and the summary comes from Zoom.</p>
-  <p>The team's wider AI tooling, including its context hub and most of its agent skills, was built by teammates.</p>
-</div>
-
-<footer>
-  <p>Production code from the four employers above is proprietary, so it is described here rather than shown. The capstone work sits in the team's repositories and its written decision records, and I can walk through either. Figures from the four employers are the ones reported internally at the time, and I can explain what produced each one.</p>
-</footer>
-
+<div class="layout">
+  <aside>
+    <h1>Li-Fu<br>Chang</h1>
+    <p class="role">Software engineer. I build AI agents that run in production, after eight years of factory software.</p>
+    <ul class="facts">
+      <li>MSE, Carnegie Mellon, Dec 2026</li>
+      <li>C# · .NET · SQL Server · Python</li>
+      <li>Kubernetes · ArgoCD · OpenTelemetry</li>
+      <li>Pittsburgh, PA</li>
+    </ul>
+    <div class="links"><a href="LiFu_Chang_Resume.pdf">Resume (PDF)</a><a href="https://www.linkedin.com/in/lifu-chang">LinkedIn</a><a href="https://github.com/hic003cih">GitHub</a><a href="mailto:leifchang10@gmail.com">Email</a></div>
+  </aside>
+  <div class="work">
+    <article>
+      <div class="tag">CMU capstone · IRALOGIX · 2026</div>
+      <h2>AI agent that drafts state retirement rules</h2>
+      <p>Researching 20 states' rules by hand was slow and could miss details. The agent drafts one state's rules, and reviewers start drafts and approve changes from its chat page.</p>
+      <p>Every value's quote is checked against its cited source page. Failed checks get up to 3 automatic fixes, and a person approves every draft.</p>
+      <div class="nums"><div><b>2 days → 20 min</b><span>per state draft</span></div><div><b>$3.50</b><span>per draft</span></div><div><b>2</b><span>prod failures caught in minutes</span></div></div>
+    </article>
+    <article>
+      <div class="tag">Personal project · 2026</div>
+      <h2>Study-Coach multi-agent system</h2>
+      <p>Designed a multi-agent system of 11+ scoped AI subagents over a 200+ document knowledge base, each enforcing a source-of-truth hierarchy to reduce hallucination.</p>
+      <div class="nums"><div><b>11+</b><span>scoped subagents</span></div><div><b>200+</b><span>documents in the knowledge base</span></div></div>
+    </article>
+    <article>
+      <div class="tag">CMU capstone · platform</div>
+      <h2>Observability and delivery</h2>
+      <p>Designed and implemented a vendor-neutral observability architecture on OpenTelemetry, with a Collector selecting the backend at deploy time, enabling three backend changes with zero application code changes.</p>
+      <p>Git-driven ArgoCD deploys on AWS EKS. A failing test or SonarQube quality gate blocks the image build.</p>
+      <div class="nums"><div><b>3</b><span>backend changes, 0 app code changes</span></div><div><b>87.5%</b><span>test coverage</span></div></div>
+    </article>
+    <article>
+      <div class="tag">CMU course project · Jan–Apr 2026</div>
+      <h2>Up Next movie recommender</h2>
+      <p>Owned production observability for a recommender serving ~1M simulated users: Grafana dashboards and Prometheus alerting for data quality, drift, and latency.</p>
+      <p>Wrote the unit and offline/online evaluation test suite (pytest) for the recommendation pipeline.</p>
+      <div class="nums"><div><b>~1M</b><span>simulated users</span></div></div>
+    </article>
+    <article>
+      <div class="tag">Lite-On Technology · 2019–2022</div>
+      <h2>Equipment Management System</h2>
+      <p>Proposed, architected, and implemented an EMS in C# and ASP.NET MVC on SQL Server, with an API that SAP called to pull machine data.</p>
+      <div class="nums"><div><b>−30%</b><span>machine downtime</span></div><div><b>5M TWD</b><span>saved a year</span></div></div>
+    </article>
+    <article>
+      <div class="tag">Foxsemicon · Lite-On · Dewei · Cooler Master</div>
+      <h2>Eight years of manufacturing software</h2>
+      <p>MES and internal systems in C# and .NET at three manufacturers and one MES vendor in Taiwan and China.</p>
+      <div class="nums"><div><b>95%</b><span>adoption in month 1</span></div><div><b>+20%</b><span>line efficiency</span></div><div><b>+10%</b><span>product yield</span></div></div>
+    </article>
+  </div>
 </div>
 </body>
 </html>
